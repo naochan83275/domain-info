@@ -83,6 +83,20 @@
         misskeyは、管理人の気分で開けますので気長に待っていてください。<br>
         あと部の人やクラスメイト、小学校の同級生でドメイン欲しい人いたら貸します。連絡ください。
       </p>
+      <details>
+        <summary>サーバー稼働状況</summary>
+        <table class="table is-fullwidth">
+          <tr>
+            <th>サーバー名</th>
+            <th>URL</th>
+            <th>状況</th>
+          </tr>
+          <tr>
+            <td>misskey</td>
+            <td>misskey.na83.f5.si</td>
+            <td id="misskeyserver"><span class="button is-danger">サーバーがダウンしています</span></td>
+          </tr>
+        </table>
     </div>
     <footer class="footer">
       <div class="box">
@@ -94,5 +108,23 @@
       </div>
     </footer>
     <script src="/easteregg.js"></script>
+    <script>
+      var misskey = 'http://misskey.na83.f5.si';
+      function checkserver(_url, _element){
+        if(check_server(_url) != 200){
+          document.getElementById(_element).innerHTML = '<span class="button is-success">サーバーは正常に動作しています</span>'
+        }
+      }
+      function check_server(_url)
+      {
+        try{
+          var res = UrlFetchApp.fetch(_url);
+          return res.getResponseCode();
+        } catch(e){
+           return 999;
+        }
+      }
+      checkserver(misskey, 'misskeyserver')
+    </script>
   </body>
 </html>
