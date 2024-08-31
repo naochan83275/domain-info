@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja" class="has-navbar-fixed-top" id="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title id="tabtitle">
+      home | naochan's website
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//naochan83275.github.io/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h1>Naochan's website</h1>
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              home | ホーム
+            </a>
+            <a class="navbar-item" href="/blog/">
+              blog | ブログ
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                about
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/about/me/">
+                  about me | 自己紹介
+                </a>
+                <a class="navbar-item" href="/about/website/">
+                  about this site | このサイトについて
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                ライトモード/ダークモード 切り替え
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="javascript:change_theme('theme-light')">
+                  ライトモード | light
+                </a>
+                <a class="navbar-item" href="javascript:change_theme('theme-dark')">
+                  ダークモード | dark
+                </a>
+                <a class="navbar-item" href="javascript:change_theme('system')">
+                  システムに合わせる | system
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <div class="box">
+      <p class="subtitle">
+        About this domain | このドメインについて
+      </p>
+      <p id="msg">
+        このドメインは、@Naochan83275 の<strong>個人所有</strong>ドメインです。<br>
+        このドメインは、Cloudflareで<strong>保護されて</strong>います。<br>
+        また、このドメインには、<br>
+        ・misskey.na83.f5.si (misskeyインスタンス)<br>
+        ・cpc-chat.na83.f5.si (動かないチャットアプリ)<br>
+        のサブドメインがあります。<br>
+        misskeyは、管理人の気分で開けますので気長に待っていてください。<br>
+        あと部の人やクラスメイト、小学校の同級生でドメイン欲しい人いたら貸します。連絡ください。
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="box">
+        <p class="subtitle">
+          Naochan's website
+        </p>
+        <p>(this site useing <a href="https://bulma.io">Bulma</a>)</p>
+        <small>&copy; 2024 Naochan83275</small>
+      </div>
+    </footer>
+    <script src="/easteregg.js"></script>
+  </body>
+</html>
