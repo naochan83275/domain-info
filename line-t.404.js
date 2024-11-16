@@ -1,4 +1,5 @@
-if ( ~window.location.href.indexOf('na83.f5.si/n/line/t/')) {
+var _url = window.location.href;
+if ( ~_url.indexOf('na83.f5.si/n/line/t/')) {
   document.getElementsByTag('html').innerHTML = `
 <head>
     <meta charset="UTF-8">
@@ -48,5 +49,5 @@ if ( ~window.location.href.indexOf('na83.f5.si/n/line/t/')) {
   
  
 </body>
-`
+`;
 }
