@@ -1,6 +1,6 @@
 var _url = window.location.href;
 if ( ~_url.indexOf('na83.f5.si/n/line/t/')) {
-  document.getElementsByTag('html').innerHTML = `
+  document.getElementsByTagName('html').innerHTML = `
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
